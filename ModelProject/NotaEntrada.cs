@@ -23,8 +23,9 @@ namespace ModelProject
         public void RegistrarProduto
             (ProdutoNotaEntrada produto)
         {
-            if (!this.Produtos.Contains(produto))
-                this.Produtos.Add(produto);
+            if (this.Produtos.Contains(produto))
+                this.Produtos.Remove(produto);
+            this.Produtos.Add(produto);
         }
 
         public void RemoverProduto
@@ -37,5 +38,6 @@ namespace ModelProject
         {
             this.Produtos.Clear();
         }
+
     }
 }

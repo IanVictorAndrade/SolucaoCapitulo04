@@ -52,6 +52,12 @@
     <Compile Include="FormFornecedor.Designer.cs">
       <DependentUpon>FormFornecedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistro.Designer.cs">
+      <DependentUpon>FormRegistro.cs</DependentUpon>
+    </Compile>
     <Compile Include="JanelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormFornecedor.resx">
       <DependentUpon>FormFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistro.resx">
+      <DependentUpon>FormRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JanelaPrincipal.resx">
       <DependentUpon>JanelaPrincipal.cs</DependentUpon>

@@ -20,6 +20,7 @@ namespace ControllerProject
 
         public void Remove(NotaEntrada notaEntrada)
         {
+            notaEntrada.RemoverTodosProdutos();
             this.repository.RemoveNotaEntrada(notaEntrada);
         }
 
@@ -33,5 +34,15 @@ namespace ControllerProject
             return this.repository.
                 UpdateNotaEntrada(notaEntrada);
         }
+        public void RemoveNotaEntrada(NotaEntrada notaEntrada)
+        {
+            this.repository.
+                RemoveNotaEntrada(notaEntrada);
+        }
+        public NotaEntrada GetNotaEntradaById(Guid Id)
+        {
+            return this.repository.GetNotaEntradaById(Id);
+        }
+
     }
 }
